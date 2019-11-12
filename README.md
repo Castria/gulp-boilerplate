@@ -45,7 +45,7 @@ Add your source files to the appropriate `src` subdirectories. Gulp will process
 
 - JavaScript files in the `src/js` directory will be compiled to `dist/js`. Files in subdirectories under the `js` folder will be concatenated. For example, files in `js/detects` will compile into `detects.js`.
 - Files in the `src/sass` directory will be compiled to `dist/css`.
-- SVG files placed in the `src/svg` directory will be optimized with SVGO and compiled into `dist/svg`.
+- SVG files placed in the `src/svg` directory will be optimized with SVGO and compiled into `dist/images`.
 - Files and folders placed in the `copy` directory will be copied as-is into the `dist` directory.
 
 ### package.json
@@ -93,7 +93,7 @@ Gulp generates minified and unminified CSS files. It also includes [autoprefixer
 
 Place SVG files in the `src/svg` directory.
 
-SVG files will be optimized with [SVGO](https://github.com/svg/svgo) and compiled into `dist/svg`.
+SVG files will be optimized with [SVGO](https://github.com/svg/svgo) and compiled into `dist/images`.
 
 ### Copy Files
 
@@ -154,7 +154,7 @@ var paths = {
 	},
 	svgs: {
 		input: 'src/svg/*.svg',
-		output: 'dist/svg/'
+		output: 'dist/images/'
 	},
 	copy: {
 		input: 'src/copy/*',
